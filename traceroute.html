@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traceroute</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.png" class="logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="">LOGIN</a></li>
+                    <li><a href="">SIGN_UP</a></li>
+                    <li><a href="">OUR SERVICES</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <img src="menu.svg" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+        <div class="col-1">
+            <h2><br>Traceroute</h2>
+            <h3>Trace your path,find your adventure.</h3>
+            <p>Every second matters.</p>
+            <h4>Free of cost!</h4>
+            <button type="button">SignUp Now<img src="arrow.png">
+            </button>
+        </div>
+        <div class="col-2">
+            <img src="logo.png" class="control" >
+            <!-- <div class="color-box"></div> -->
+
+        </div>
+        </div>
+
+        <div class="social-links">
+            <img src="fb.png">
+            <img src="ig.png">
+            <img src="tw.png">
+        </div>
+    </div>
+
+    <script>
+
+        var menuList=document.getElementById("menuList");
+        menuList.style.maxHeight="0px";
+        function togglemenu(){
+            if (menuList.style.maxHeight=="0px"){
+                menuList.style.maxHeight="130px";
+            }
+            else {
+                menuList.style.maxHeight="0px";
+            }
+        }
+    </script>
+</body>
+</html> 
